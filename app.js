@@ -98,8 +98,8 @@ app.delete('/api/users/:id', (req, res)=> {
     res.send('User deleted');
 });
 
-app.listen(3000, ()=> {
-    console.log('Run on the port 3000...');
+app.listen(process.env.PORT, ()=> {
+    console.log(`Run on the port ${process.env.PORT}...`);
 });
 
 
